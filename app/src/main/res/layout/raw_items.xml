@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageviewL"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launcher_foreground"/>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text=""
+            android:layout_toRightOf="@id/imageviewL"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            />
+
+            <TextView
+                android:id="@+id/hrstxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_toRightOf="@id/imageviewL"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="6dp"
+                android:layout_below="@id/username"
+                />
+
+
+            <TextView
+                android:id="@+id/learninghrs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="learning hours,"
+                android:layout_toRightOf="@id/hrstxt"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="6dp"
+                android:layout_below="@id/username"
+                />
+
+            <TextView
+                android:id="@+id/countrytxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_toRightOf="@id/learninghrs"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="6dp"
+                android:layout_below="@id/username"
+
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
